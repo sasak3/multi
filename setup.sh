@@ -229,10 +229,12 @@ wget -q -O /root/cf1.sh "https://raw.githubusercontent.com/SETANTAZVPN/multi-ws/
 chmod +x /root/cf1.sh
 ./cf1.sh
 elif test $dom -eq 2; then
-read -rp "Domain/Host: " -e host
-echo "IP=$host" >> /var/lib/premium-script/ipvps.conf
- "IP=$host" >> /etc/xray/domain
- 
+read -rp "Domain/Host: " -e pp
+echo "IP=$pp" >> /var/lib/ssnvpn-pro/ipvps.conf
+ "IP=$pp" >> /etc/xray/domain
+ "$pp" > /etc/xray/scdomain
+ "$pp" > /root/scdomain
+ "$pp" > /root/domain
 #yellow "Add Domain for vmess/vless/trojan dll"
 #echo "-------------------------------------"
 #echo "     Scipt ARH-PRJK "
