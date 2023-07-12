@@ -3,7 +3,7 @@ dateFromServer=$(curl -v --insecure --silent https://google.com/ 2>&1 | grep Dat
 biji=`date +"%Y-%m-%d" -d "$dateFromServer"`
 #########################
 
-REPO="https://raw.githubusercontent.com/SETANTAZVPN/aaa/main/"
+REPO="https://raw.githubusercontent.com/myridwan/scriptvps/ipuk/"
 
 ###
 BURIQ () {
