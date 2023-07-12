@@ -274,14 +274,17 @@ clear
 wget https://raw.githubusercontent.com/SETANTAZVPN/multi-ws/ipuk/websocket/nontls.sh && chmod +x nontls.sh && ./nontls.sh
 clear
 ### Pasang SlowDNS
-function install_slowdns(){
-    print_install "Memasang modul SlowDNS Server"
-    wget -q -O /tmp/nameserver "${REPO}slowdns/nameserver" >/dev/null 2>&1
-    chmod +x /tmp/nameserver
-    bash /tmp/nameserver | tee /root/install.log
-    print_success "SlowDNS"
-}
-
+wget https://raw.githubusercontent.com/Andyvpn/Autoscript-by-azi/main/autoscript-ssh-slowdns-main/slowdns.sh && chmod +x slowdns.sh && ./slowdns.sh
+#function install_slowdns(){
+#    print_install "Memasang modul SlowDNS Server"
+ #   wget -q -O /tmp/nameserver "${REPO}slowdns/nameserver" >/dev/null 2>&1
+  #  chmod +x /tmp/nameserver
+   # bash /tmp/nameserver | tee /root/install.log
+   # print_success "SlowDNS"
+#}
+#
+clear
+wget https://raw.githubusercontent.com/SETANTAZVPN/v4/main/udp/udp.sh && bash udp.sh
 clear
 echo -e "$green[INFO]$NC Download Extra Menu"
 sleep 2
