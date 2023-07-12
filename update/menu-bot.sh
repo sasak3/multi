@@ -8,7 +8,7 @@ export GREEN='\033[0;32m';
 RED="\033[0;31m" 
 COLOR1="$(cat /etc/ssnvpn/theme/$colornow | grep -w "TEXT" | cut -d: -f2|sed 's/ //g')"
 COLBG1="$(cat /etc/ssnvpn/theme/$colornow | grep -w "BG" | cut -d: -f2|sed 's/ //g')"                    
-###########- END COLOR CODE -##########
+###########- END COLORCODE -##########
 
 ipes=$(curl -sS ipv4.icanhazip.com)
 [[ ! -f /usr/bin/jq ]] && {
