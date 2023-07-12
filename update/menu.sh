@@ -210,7 +210,7 @@ echo -e "  ${COLOR1}[07]${NC} • [${YELLOW}Menu${NC}] LOAD VPS  ${COLOR1}[15]${
 echo -e "  ${COLOR1}[08]${NC} • [${YELLOW}Menu${NC}] UPDATE SC ${COLOR1}[16]${NC} • REGISTER IP VPS  $COLOR1 $NC"
 echo -e " ${RED}"
 echo -e "${CYAN}━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\033[0m${NC}"
-echo -e "\E[44;1;39m                     ⇱ SETAN-VPN SC  PREMIUM ⇲                      \E[0m"
+echo -e "\E[44;1;39m                     ⇱ SETAN-VPN SC PREMIUM ⇲                  \E[0m"
 echo -e "${CYAN}━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\033[0m${NC}"
 
 echo -e ""
