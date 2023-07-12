@@ -221,7 +221,7 @@ read -rp "Choose Your Domain Installation : " dom
 
 if test $dom -eq 1; then
 clear
-wget -q -O /root/cf.sh "https://raw.githubusercontent.com/SETANTAZVPN/multi-ws/ipuk/cf1.sh"
+wget -q -O /root/cf1.sh "https://raw.githubusercontent.com/SETANTAZVPN/multi-ws/ipuk/cf1.sh"
 chmod +x /root/cf.sh
 ./cf.sh
 elif test $dom -eq 3; then
