@@ -20,9 +20,9 @@ apt install jq curl -y
 
 DOMAIN=slowdns.app
 sub=$(</dev/urandom tr -dc a-z0-9 | head -c6)
-SUB_DOMAIN=${sub}.slowdns.app
-CF_ID=nuryahyamuhaimin@gmail.com_cmd
-CF_KEY=9dd2f30c099dbcf541cbd5c188d61ce060cf7
+SUB_DOMAIN=${sub}.stvpn.app
+CF_ID=tazzpyns@gmail.com
+CF_KEY=1ff2e2bfc5f3341e1e7a70ed2c1a333841a8b
 NS_DOMAIN=xdns-${SUB_DOMAIN}
 set -euo pipefail
 IP=$(wget -qO- ipinfo.io/ip);
