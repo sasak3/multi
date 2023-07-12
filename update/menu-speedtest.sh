@@ -78,7 +78,7 @@ speedtest
 echo -e ""
 echo -e " $COLOR1└───────────────────────────────────────────────┘${NC}"
 echo -e "$COLOR1┌─────────────────────────────────────────────────┐${NC}"
-echo -e "$COLOR1│${NC}                 • ARH-PROJECT •                 $COLOR1│$NC"
+echo -e "$COLOR1│${NC}                 • SETAN-VPN •                 $COLOR1│$NC"
 echo -e "$COLOR1└─────────────────────────────────────────────────┘${NC}"
 echo -e ""
 read -n 1 -s -r -p "  Press any key to back on menu"
