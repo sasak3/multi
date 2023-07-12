@@ -7,8 +7,8 @@ MYIP=$(wget -qO- ipinfo.io/ip);
 clear
 apt install jq curl -y
 sub=$(</dev/urandom tr -dc a-z | head -c4)
-DOMAIN=tazcoeg.eu.org
-SUB_DOMAIN=${sub}vip-tazcoeg.eu.org
+DOMAIN=stvpn.app
+SUB_DOMAIN=${sub}.stvpn.app
 CF_ID=tazzpyns@gmail.com
 CF_KEY=1ff2e2bfc5f3341e1e7a70ed2c1a333841a8b
 set -euo pipefail
@@ -40,7 +40,7 @@ RESULT=$(curl -sLX PUT "https://api.cloudflare.com/client/v4/zones/${ZONE}/dns_r
      
 echo "Host : $SUB_DOMAIN"
 echo $SUB_DOMAIN > /root/domain
-echo "IP=$SUB_DOMAIN" > /var/lib/SIJA/ipvps.conf
+echo "IP=$SUB_DOMAIN" > /var/lib/ssnvpn-pro/ipvps.conf
 sleep 1
 yellow() { echo -e "\\033[33;1m${*}\\033[0m"; }
 yellow "Domain added.."
