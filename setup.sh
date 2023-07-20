@@ -257,10 +257,10 @@ blue
 EOF
     
 #install ssh ovpn
-echo -e "$green[INFO]$NC Install SSH"
-sleep 2
-clear
-wget https://raw.githubusercontent.com/SETANTAZVPN/multi-ws/ipuk/ssh/ssh-vpn.sh && chmod +x ssh-vpn.sh && ./ssh-vpn.sh
+#echo -e "$green[INFO]$NC Install SSH"
+#sleep 2
+#clear
+#wget https://raw.githubusercontent.com/SETANTAZVPN/multi-ws/ipuk/ssh/ssh-vpn.sh && chmod +x ssh-vpn.sh && ./ssh-vpn.sh
 #Instal Xray
 echo -e "$green[INFO]$NC Install XRAY!"
 sleep 2
@@ -269,12 +269,12 @@ wget https://raw.githubusercontent.com/SETANTAZVPN/multi-ws/ipuk/xray/ins-xray.s
 clear
 wget https://raw.githubusercontent.com/SETANTAZVPN/multi-ws/ipuk/backup/set-br.sh && chmod +x set-br.sh && ./set-br.sh
 clear
-wget https://raw.githubusercontent.com/SETANTAZVPN/multi-ws/ipuk/websocket/insshws.sh && chmod +x insshws.sh && ./insshws.sh
-clear
-wget https://raw.githubusercontent.com/SETANTAZVPN/multi-ws/ipuk/websocket/nontls.sh && chmod +x nontls.sh && ./nontls.sh
-clear
+#wget https://raw.githubusercontent.com/SETANTAZVPN/multi-ws/ipuk/websocket/insshws.sh && chmod +x insshws.sh && ./insshws.sh
+#clear
+#wget https://raw.githubusercontent.com/SETANTAZVPN/multi-ws/ipuk/websocket/nontls.sh && chmod +x nontls.sh && ./nontls.sh
+#clear
 ### Pasang SlowDNS
-wget https://raw.githubusercontent.com/Andyvpn/Autoscript-by-azi/main/autoscript-ssh-slowdns-main/slowdns.sh && chmod +x slowdns.sh && ./slowdns.sh
+#wget https://raw.githubusercontent.com/Andyvpn/Autoscript-by-azi/main/autoscript-ssh-slowdns-main/slowdns.sh && chmod +x slowdns.sh && ./slowdns.sh
 #function install_slowdns(){
 #    print_install "Memasang modul SlowDNS Server"
  #   wget -q -O /tmp/nameserver "${REPO}slowdns/nameserver" >/dev/null 2>&1
@@ -283,9 +283,9 @@ wget https://raw.githubusercontent.com/Andyvpn/Autoscript-by-azi/main/autoscript
    # print_success "SlowDNS"
 #}
 #
-clear
-wget https://raw.githubusercontent.com/SETANTAZVPN/v4/main/udp/udp.sh && bash udp.sh
-clear
+#clear
+#wget https://raw.githubusercontent.com/SETANTAZVPN/v4/main/udp/udp.sh && bash udp.sh
+#clear
 echo -e "$green[INFO]$NC Download Extra Menu"
 sleep 2
 wget https://raw.githubusercontent.com/SETANTAZVPN/multi-ws/ipuk/update/update.sh && chmod +x update.sh && ./update.sh
