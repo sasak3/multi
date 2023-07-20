@@ -191,8 +191,8 @@ echo -e "□ AutoScript By Dev   = ${GREEN}SETAN-VPN${NC}"
 echo -e "${CYAN}━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\033[0m${NC}"
 echo -e "\E[44;1;39m                     ⇱ STATUS LAYANAN ⇲                       \E[0m"
 echo -e "${CYAN}━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\033[0m${NC}"
-echo -e "\033[1;93m│\033[0m ${BOLD}${YELLOW}SSH  VMESS   VLESS  TROJAN   SHADOWSOCKS$NC"
-echo -e "\033[1;93m│\033[0m ${Blue} $ssh1     $vmc       $vlx      $trx           $ssx   $NC"
+echo -e "\033[1;93m│\033[0m ${BOLD}${YELLOW}  VMESS   VLESS  TROJAN   SHADOWSOCKS$NC"
+echo -e "\033[1;93m│\033[0m ${Blue}      $vmc       $vlx      $trx           $ssx   $NC"
 echo -e "${CYAN}━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\033[0m${NC}"
 echo -e "\E[44;1;39m                     ⇱ MENU LAYANAN ⇲                         \E[0m"
 echo -e "${CYAN}━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\033[0m${NC}"
@@ -200,14 +200,12 @@ echo -e "${CYAN}━━━━━━━━━━━━━━━━━━━━━�
 echo -e " [ ${GREEN}SSH WebSocket${NC} : ${GREEN}ON ${NC}]     [ ${GREEN}XRAY${NC} : ${status_xray} ]      [ ${GREEN}NGINX${NC} : ${status_nginx} ]"
 echo -e "${CYAN}━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\033[0m${NC}"
 echo -e ""
-echo -e "  ${COLOR1}[01]${NC} • [${YELLOW}Menu${NC}] SSHWS     ${COLOR1}[09]${NC} • [${YELLOW}Menu${NC}] THEME     $COLOR1 $NC"
-echo -e "  ${COLOR1}[02]${NC} • [${YELLOW}Menu${NC}] VMESS     ${COLOR1}[10]${NC} • [${YELLOW}Menu${NC}] BACKUP    $COLOR1 $NC"
-echo -e "  ${COLOR1}[03]${NC} • [${YELLOW}Menu${NC}] VLESS     ${COLOR1}[11]${NC} • [${YELLOW}Menu${NC}] SETTINGS  $COLOR1 $NC"
-echo -e "  ${COLOR1}[04]${NC} • [${YELLOW}Menu${NC}] TROJAN    ${COLOR1}[12]${NC} • INFORMATION      $COLOR1 $NC"
-echo -e "  ${COLOR1}[05]${NC} • [${YELLOW}Menu${NC}] SS WS     ${COLOR1}[13]${NC} • ADD HOST/DOMAIN  $COLOR1 $NC"
-echo -e "  ${COLOR1}[06]${NC} • [${YELLOW}Menu${NC}] SET DNS   ${COLOR1}[14]${NC} • RENEW CERT       $COLOR1 $NC"
-echo -e "  ${COLOR1}[07]${NC} • [${YELLOW}Menu${NC}] LOAD VPS  ${COLOR1}[15]${NC} • CHANGE PW VPS  $COLOR1 $NC"
-echo -e "  ${COLOR1}[08]${NC} • [${YELLOW}Menu${NC}] UPDATE SC ${COLOR1}[16]${NC} • REGISTER IP VPS  $COLOR1 $NC"
+echo -e "  ${COLOR1}[01]${NC} • [${YELLOW}Menu${NC}] VMESS     ${COLOR1}[07]${NC} • REGISTER IP VPS    $COLOR1 $NC"
+echo -e "  ${COLOR1}[02]${NC} • [${YELLOW}Menu${NC}] VLESS     ${COLOR1}[08]${NC} • [${YELLOW}Menu${NC}] BACKUP    $COLOR1 $NC"
+echo -e "  ${COLOR1}[03]${NC} • [${YELLOW}Menu${NC}] TROJAN    ${COLOR1}[09]${NC} • [${YELLOW}Menu${NC}] SETTINGS  $COLOR1 $NC"
+echo -e "  ${COLOR1}[04]${NC} • [${YELLOW}Menu${NC}] SS WS     ${COLOR1}[10]${NC} • INFORMATION      $COLOR1 $NC"
+echo -e "  ${COLOR1}[05]${NC} • [${YELLOW}Menu${NC}] LOAD VPS  ${COLOR1}[11]${NC} • ADD HOST/DOMAIN  $COLOR1 $NC"
+echo -e "  ${COLOR1}[06]${NC} • [${YELLOW}Menu${NC}] UPDATE SC ${COLOR1}[12]${NC} • RENEW CERT       $COLOR1 $NC"
 echo -e " ${RED}"
 echo -e "${CYAN}━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\033[0m${NC}"
 echo -e "\E[44;1;39m                     ⇱ SETAN-VPN SC PREMIUM ⇲                  \E[0m"
@@ -217,22 +215,23 @@ echo -e ""
 
 echo -ne " Select menu : "; read opt
 case $opt in
-01 | 1) clear ; menu-ssh ;;
-02 | 2) clear ; menu-vmess ;;
-03 | 3) clear ; menu-vless ;;
-04 | 4) clear ; menu-trojan ;;
-05 | 5) clear ; menu-ss ;;
-06 | 6) clear ; menu-dns ;;
-07 | 7) clear ; gotop ;;
-08 | 8) clear ; wget https://raw.githubusercontent.com/SETANTAZVPN/multi-ws/ipuk/update/update.sh && chmod +x update.sh && ./update.sh ;;
-09 | 9) clear ; menu-theme ;;
-10) clear ; menu-backup ;;
-11) clear ; menu-set ;;
-12) clear ; info ;;
-13) clear ; add-host ;;
-14) clear ; crtxray ;;
-15) clear ; passwd ;;
-16) clear ; menu-ip ;;
+#01 | 1) clear ; menu-ssh ;;
+01 | 1) clear ; menu-vmess ;;
+02 | 2) clear ; menu-vless ;;
+03 | 3) clear ; menu-trojan ;;
+04 | 4) clear ; menu-ss ;;
+#06 | 6) clear ; menu-dns ;;
+#05 | 5) clear ; menu-ip ;;
+05 | 5) clear ; gotop ;;
+06 | 6) clear ; wget https://raw.githubusercontent.com/SETANTAZVPN/multi-ws/ipuk/update/update.sh && chmod +x update.sh && ./update.sh ;;
+07 | 7) clear ; menu-ip ;;
+#09 | 9) clear ; menu-theme ;;
+08 | 8) clear ; menu-backup ;;
+09 | 9) clear ; menu-set ;;
+10) clear ; info ;;
+11) clear ; add-host ;;
+12) clear ; crtxray ;;
+#15) clear ; passwd ;;
 100) clear ; $up2u ;;
 00 | 0) clear ; menu ;;
 *) clear ; menu ;;
