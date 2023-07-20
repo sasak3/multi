@@ -210,16 +210,50 @@ wget -q https://raw.githubusercontent.com/SETANTAZVPN/multi-ws/ipuk/dependencies
 rm dependencies.sh
 clear
 
-yellow "Add Domain for vmess/vless/trojan dll"
-echo "-------------------------------------"
-echo "     input domain "
-echo "-------------------------------------"
-read -rp "Input your domain : " -e pp
-echo "$pp" > /root/domain
-echo "$pp" > /root/scdomain
-echo "$pp" > /etc/xray/domain
-echo "$pp" > /etc/xray/scdomain
-echo "IP=$pp" > /var/lib/ssnvpn-pro/ipvps.conf
+#yellow "Add Domain for vmess/vless/trojan dll"
+#echo "-------------------------------------"
+#echo "     input domain "
+#echo "-------------------------------------"
+#read -rp "Input your domain : " -e pp
+#echo "$pp" > /root/domain
+#echo "$pp" > /root/scdomain
+#echo "$pp" > /etc/xray/domain
+#echo "$pp" > /etc/xray/scdomain
+#echo "IP=$pp" > /var/lib/ssnvpn-pro/ipvps.conf
+
+echo -e "$white\033[0;34m┌─────────────────────────────────────────┐${NC}"
+echo -e "                          ⇱ INSTALL DOMAIN ⇲            "
+echo -e "$white\033[0;34m└─────────────────────────────────────────┘${NC}"
+echo "1. Use Domain Script 01"
+echo "2. Use Domain Script 02"
+echo "2. Use Private Domain "
+echo -e "$white\033[0;34m└─────────────────────────────────────────┘${NC}"
+echo -e""
+read -rp "Choose Your Domain Installation : " dom 
+
+if test $dom -eq 1; then
+clear
+wget -q -O /root/cf.sh "https://raw.githubusercontent.com/SETANTAZVPN/multi-ws/ipuk/cf1.sh"
+chmod +x /root/cf.sh
+./cf.sh
+elif test $dom -eq 2; then
+wget -q -O /root/cf1.sh "https://raw.githubusercontent.com/SETANTAZVPN/multi-ws/ipuk/cf1.sh"
+chmod +x /root/cf1.sh
+./cf1.sh
+elif test $dom -eq 3; then
+read -rp "Domain/Host: " -e host
+echo "IP=$host" >> /var/lib/ssnvpn-pro/ipvps.conf
+ "IP=$host" >> /etc/xray/domain
+ 
+fi
+echo -e "${GREEN}Done!${NC}"
+sleep 2
+clear
+echo "IP=$host" >> /var/lib/ssnvpn-pro/ipvps.conf
+#echo "IP=$host" >> /var/lib/scrz-prem/ipvps.conf
+echo "$host" >> /root/domain
+#clear
+
 
 #THEME RED
 cat <<EOF>> /etc/ssnvpn/theme/red
