@@ -1,7 +1,7 @@
 #!/bin/bash
-# Edition : Stable Edition V3.0
-# Auther  : MyridWan Project
-# (C) Copyright 2023
+# Edition : Stable Edition V7.0
+# Auther  : Devilstunnel Project
+# (C) Copyright 2021
 # =========================================
 #!/bin/bash
 Green="\e[92;1m"
