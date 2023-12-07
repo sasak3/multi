@@ -21,7 +21,7 @@ echo "Progress..." | lolcat
 sleep 3
 
 # Getting Proxy Template
-wget -q -O /usr/local/bin/ws-nontls https://raw.githubusercontent.com/SETANTAZVPN/multi-ws/ipuk/websocket/ws-nontls.py
+wget -q -O /usr/local/bin/ws-nontls https://raw.githubusercontent.com/sasak3/multi-ws/ipuk/websocket/ws-nontls.py
 chmod +x /usr/local/bin/ws-nontls
 
 # Installing Service
