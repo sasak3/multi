@@ -21,7 +21,7 @@ trx=$(grep -c -E "^#! " "/etc/xray/config.json")
 ssx=$(grep -c -E "^## " "/etc/xray/config.json")
 #######PERIZINAN
 BURIQ () {
-    curl -sS https://raw.githubusercontent.com/SETANTAZVPN/izinvps/ipuk/ip > /root/tmp
+    curl -sS https://raw.githubusercontent.com/sasak3/izinvps/ipuk/ip > /root/tmp
     data=( `cat /root/tmp | grep -E "^### " | awk '{print $2}'` )
     for user in "${data[@]}"
     do
@@ -39,7 +39,7 @@ BURIQ () {
 }
 
 MYIP=$(curl -sS ipv4.icanhazip.com)
-Name=$(curl -sS https://raw.githubusercontent.com/SETANTAZVPN/izinvps/ipuk/ip | grep $MYIP | awk '{print $2}')
+Name=$(curl -sS https://raw.githubusercontent.com/sasak3/izinvps/ipuk/ip | grep $MYIP | awk '{print $2}')
 echo $Name > /usr/local/etc/.$Name.ini
 CekOne=$(cat /usr/local/etc/.$Name.ini)
 
@@ -56,7 +56,7 @@ fi
 
 PERMISSION () {
     MYIP=$(curl -sS ipv4.icanhazip.com)
-    IZIN=$(curl -sS https://raw.githubusercontent.com/SETANTAZVPN/izinvps/ipuk/ip | awk '{print $4}' | grep $MYIP)
+    IZIN=$(curl -sS https://raw.githubusercontent.com/sasak3/izinvps/ipuk/ip | awk '{print $4}' | grep $MYIP)
     if [ "$MYIP" = "$IZIN" ]; then
     Bloman
     else
@@ -74,7 +74,7 @@ PERMISSION
 if [ "$res" = "Expired" ]; then
 Exp="\e[36mExpired\033[0m"
 else
-Exp=$(curl -sS https://raw.githubusercontent.com/SETANTAZVPN/izinvps/ipuk/ip | grep $MYIP | awk '{print $3}')
+Exp=$(curl -sS https://raw.githubusercontent.com/sasak3/izinvps/ipuk/ip | grep $MYIP | awk '{print $3}')
 fi
 
 clear
@@ -223,7 +223,7 @@ case $opt in
 #06 | 6) clear ; menu-dns ;;
 #05 | 5) clear ; menu-ip ;;
 05 | 5) clear ; gotop ;;
-06 | 6) clear ; wget https://raw.githubusercontent.com/SETANTAZVPN/multi-ws/ipuk/update/update.sh && chmod +x update.sh && ./update.sh ;;
+06 | 6) clear ; wget https://raw.githubusercontent.com/sasak3/multi-ws/ipuk/update/update.sh && chmod +x update.sh && ./update.sh ;;
 07 | 7) clear ; menu-ip ;;
 #09 | 9) clear ; menu-theme ;;
 08 | 8) clear ; menu-backup ;;
